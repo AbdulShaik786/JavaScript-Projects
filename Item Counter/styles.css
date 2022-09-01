@@ -1,0 +1,34 @@
+body{
+    background: url("images/Background.avif");
+    background-size: cover;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#header{
+    color:#8E7243;
+}
+
+#content{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+button{
+    width: 15%;
+}
+
+#count-el{
+    width:200px;
+    color: #8F9089; 
+    font-size: xx-large;
+}
+
+#save-el{
+    color: #8E7243;
+}
+#save-btn{
+    margin-top: 20px;
+}

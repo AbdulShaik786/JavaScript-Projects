@@ -1,5 +1,24 @@
 <!Doctype HTML>
 <html>
-    <head></head>
-    <body></body>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <title>Item Counter</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1>COUNTER</h1>
+        </div>
+        <div id="content">
+            <button id="decrement-btn" onclick="decrement()">-</button>
+            <div id="count-el">0</div>
+            <button id="increment-btn" onclick="increment()">+</button>
+        </div>
+        <button id="save-btn" onclick="save()">Save</button>
+        <p id="save-el">Previous entries: </p>
+        <div id="footer"></div>
+        <script src="script.js"></script>
+    </body>
 </html>
