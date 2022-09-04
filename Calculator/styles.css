@@ -7,7 +7,7 @@
     border: 1px solid black;
 
     width:400px;
-    height:400px;
+    height:320px;
     background:black;
 
     display: flex;
@@ -19,31 +19,48 @@
 .text-frame{
     border: 1px solid black;
     background: grey;
+    color:white;
+
     margin: 30px;
     width:350px;
     height:80px;
+    padding: 5px;
+
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    display: flex;
+}
+
+button{
+    width:85px;
+    height: 20px;
 }
 
 .buttons-frame{
     border: 1px solid black;
 
-    width: 350px;
-    height: 220px;
+    /* width: 350px;
+    height: 220px; */
 
     display: flex;
     justify-content: space-between;
+    gap: 2px;
 }
 
 .numbers-frame{
     border: 1px solid black;
     background: hsla(220,100%,50%,0.1);
-
     display: flex;
-    align-items: center;
-
+    flex-direction: column;
+    gap: 10px;
 }
 
 .operators-frame{
     border: 1px solid black;
     background: hsla(120,100%,50%,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
 }

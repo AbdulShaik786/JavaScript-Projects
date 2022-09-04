@@ -9,36 +9,37 @@
 </head>
 <body>
     <div class="body-frame">
-        <div class="text-frame"></div>
+        <div class="text-frame">0</div>
         <div class="buttons-frame">
             <div class="numbers-frame">
                 <div>
-                    <button>1</button> 
-                    <button>2</button>
-                    <button>3</button>
+                    <button id="btn-1" onclick="input()">1</button> 
+                    <button id="btn-2" onclick="input()">2</button>
+                    <button id="btn-3" onclick="input()">3</button>
                 </div>
                 <div>
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
+                    <button id="btn-4" onclick="input()">4</button>
+                    <button id="btn-5" onclick="input()">5</button>
+                    <button id="btn-6" onclick="input()">6</button>
                 </div>
                 <div>
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
+                    <button id="btn-7" onclick="input()">7</button>
+                    <button id="btn-8" onclick="input()">8</button>
+                    <button id="btn-9" onclick="input()">9</button>
                 </div>
-                <button>0</button>
+                <button id="btn-0" onclick="input()">0</button>
+                <button id="btn-ans" onclick="input()">=</button>
             </div>
             <div class="operators-frame">
-                <button>+</button>
-                <button>-</button>
-                <button>/</button>
-                <button>*</button>
-                <button>*</button>
-                <button>=</button>
+                <button id="btn-decimal" onclick="input()">.</button>
+                <button id="btn-add" onclick="input()">+</button>
+                <button id="btn-sub" onclick="input()">-</button>
+                <button id="btn-div" onclick="input()">/</button>
+                <button id="btn-mul" onclick="input()">*</button>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 
 </body>
 </html>
