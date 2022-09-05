@@ -6,6 +6,10 @@ let cols = 25;
 let board;
 let context;
 
+//score
+let scoreDisplay = document.getElementById("score");
+let score = 0;
+
 //snake food
 let foodX;
 let foodY;
@@ -30,23 +34,26 @@ window.onload = ()=>{
 
     foodPlacing();
     document.addEventListener("keyup", changeDirection);
-    setInterval(update, 1000/10);}
+    setInterval(update, 1000/10);
+}
 
 function update(){
     if(gameOver){
         return;
     }
-
-    //board
+    scoreDisplay = document.getElementById("score");
+    scoreDisplay.textContent = score;
+        //board
     context.fillStyle='black';
     context.fillRect(0,0,board.width,board.height);
 
     //food
-    context.fillStyle='red';
+    context.fillStyle='cyan';
     context.fillRect(foodX,foodY,blockSize,blockSize);
 
 
     if(snakeX==foodX && snakeY==foodY){
+        score++;
         snakeBody.push([foodX,foodY]);
         foodPlacing();
     }
@@ -55,12 +62,13 @@ function update(){
         snakeBody[i] = snakeBody[i-1];
     }
 
+    // appending the body of snake
     if(snakeBody.length){
         snakeBody[0] = [snakeX,snakeY];
     }
 
     //snake
-    context.fillStyle="lime";
+    context.fillStyle="red";
     snakeX += velocityX * blockSize;
     snakeY += velocityY * blockSize;
     context.fillRect(snakeX,snakeY,blockSize,blockSize);
@@ -68,14 +76,26 @@ function update(){
     for(let i=0;i<snakeBody.length;i++){
         context.fillRect(snakeBody[i][0],snakeBody[i][1],blockSize,blockSize);
     }
-
-    //game-over conditions
-    if(snakeX < 0 || snakeX>(cols*blockSize) || snakeY < 0 || snakeY>(rows*blockSize)){
-        gameOver = true;
-        alert("game over!");
-    }
+    gameOverCheck();
 }
 
+function gameOverCheck(){
+        //game-over conditions // if touches borders of board
+        if(snakeX < 0 || snakeX>(cols*blockSize) || snakeY < 0 || snakeY>(rows*blockSize)){
+            gameOver = true;
+            score = 0;
+            alert("game over!");
+        }
+        
+        //if touches its own body
+        for(let i=0;i<snakeBody.length;i++){
+            if(snakeX==snakeBody[i][0] && snakeY==snakeBody[i][1]){
+                gameOver = true;
+                score=0;
+                alert("game over!");
+            }
+        }
+}
 function changeDirection(e){
     if(e.code=="ArrowUp"){
         velocityX = 0;
