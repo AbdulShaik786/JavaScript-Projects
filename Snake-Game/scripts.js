@@ -1,6 +1,6 @@
 
 //board variables
-let blockSize = 20;
+let blockSize = 15;
 let rows = 25;
 let cols = 25;
 let board;
@@ -97,19 +97,19 @@ function gameOverCheck(){
         }
 }
 function changeDirection(e){
-    if(e.code=="ArrowUp"){
+    if(e.code=="ArrowUp"|| e.code=='KeyW'){
         velocityX = 0;
         velocityY = -1;
     }
-    else if(e.code=="ArrowDown"){
+    else if(e.code=="ArrowDown" || e.code=='KeyS'){
         velocityX = 0;
         velocityY = 1;
     }
-    else if(e.code=="ArrowLeft"){
+    else if(e.code=="ArrowLeft" || e.code=='KeyA'){
         velocityX = -1;
         velocityY = 0;
     }
-    else if(e.code=="ArrowRight"){
+    else if(e.code=="ArrowRight" || e.code=='KeyD'){
         velocityX = 1;
         velocityY = 0;
     }
