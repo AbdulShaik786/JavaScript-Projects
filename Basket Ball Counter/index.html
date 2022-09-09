@@ -1,38 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css?family=Cursed+Timer+ULiL&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Verdana&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div class="main-container">
             <div class="home-container">
-                <div class="v109_13">
-                    <div class="v109_14">
-
-                    </div>
+                <div class="home-3" onclick="add(3,'home')">
                     <span class="v109_15">+3</span>
+                    <div class="v109_14"></div>
                 </div>
-                <div class="v109_16">
+                <div class="home-2" onclick="add(2,'home')">
                     <span class="v109_17">+2</span>
                     <div class="v109_18"></div>
                 </div>
-                <div class="v109_19">
+                <div class="home-1" onclick="add(1,'home')">
                     <span class="v109_20">+1</span>
                     <div class="v109_21"></div>
                 </div>
             </div>
-            <div class="v126_6">
-                <div class="v126_7">
+            <div class="guest-container">
+                <div class="guest-3" onclick="add(3,'guest')">
                     <div class="v126_8"></div>
                     <span class="v126_9">+3</span>
                 </div>
-                <div class="v126_10">
+                <div class="guest-2" onclick="add(2,'guest')">
                     <span class="v126_11">+2</span>
                     <div class="v126_12"></div>
                 </div>
-                <div class="v126_13">
+                <div class="guest-1" onclick="add(1,'guest')">
                     <span class="v126_14">+1</span>
                     <div class="v126_15"></div>
                 </div>
@@ -45,8 +41,9 @@
             </div>
             <span class="v107_160">HOME</span>
             <span class="v126_18">GUEST</span>
-            <span class="v109_3">0</span>
-            <span class="v126_19">0</span>
+            <span class="home-score">0</span>
+            <span class="guest-score">0</span>
         </div>
+        <script src="script.js"></script>
     </body>
     </html>

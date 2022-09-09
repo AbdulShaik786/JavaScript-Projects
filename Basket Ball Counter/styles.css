@@ -3,6 +3,8 @@
   }
   body {
     font-size: 14px;
+    display: flex;
+    justify-content: center;
   }
   .main-container {
     width: 575px;
@@ -27,7 +29,7 @@
     left: 82px;
     overflow: hidden;
   }
-  .v109_13 {
+  .home-3 {
     width: 45px;
     height: 45px;
     /* background: url("../images/v109_13.png"); */
@@ -43,7 +45,6 @@
   .v109_14 {
     width: 45px;
     height: 45px;
-    background: url("../images/v109_14.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -70,10 +71,9 @@
     opacity: 1;
     text-align: center;
   }
-  .v109_16 {
+  .home-2 {
     width: 45px;
     height: 45px;
-    background: url("../images/v109_16.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -98,7 +98,6 @@
   .v109_18 {
     width: 45px;
     height: 45px;
-    background: url("../images/v109_18.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -113,10 +112,9 @@
     border-bottom-right-radius: 5px;
     overflow: hidden;
   }
-  .v109_19 {
+  .home-1 {
     width: 45px;
     height: 45px;
-    background: url("../images/v109_19.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -141,7 +139,6 @@
   .v109_21 {
     width: 45px;
     height: 45px;
-    background: url("../images/v109_21.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -156,10 +153,9 @@
     border-bottom-right-radius: 5px;
     overflow: hidden;
   }
-  .v126_6 {
+  .guest-container {
     width: 155px;
     height: 45px;
-    background: url("../images/v126_6.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -169,10 +165,9 @@
     left: 337px;
     overflow: hidden;
   }
-  .v126_7 {
+  .guest-3 {
     width: 45px;
     height: 45px;
-    background: url("../images/v126_7.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -185,7 +180,6 @@
   .v126_8 {
     width: 45px;
     height: 45px;
-    background: url("../images/v126_8.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -212,10 +206,9 @@
     opacity: 1;
     text-align: center;
   }
-  .v126_10 {
+  .guest-2 {
     width: 45px;
     height: 45px;
-    background: url("../images/v126_10.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -240,7 +233,6 @@
   .v126_12 {
     width: 45px;
     height: 45px;
-    background: url("../images/v126_12.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -255,10 +247,9 @@
     border-bottom-right-radius: 5px;
     overflow: hidden;
   }
-  .v126_13 {
+  .guest-1 {
     width: 45px;
     height: 45px;
-    background: url("../images/v126_13.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -283,7 +274,6 @@
   .v126_15 {
     width: 45px;
     height: 45px;
-    background: url("../images/v126_15.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -301,7 +291,6 @@
   .v107_175 {
     width: 155px;
     height: 120px;
-    background: url("../images/v107_175.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -328,7 +317,6 @@
   .v126_16 {
     width: 155px;
     height: 120px;
-    background: url("../images/v126_16.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -376,7 +364,7 @@
     opacity: 1;
     text-align: center;
   }
-  .v109_3 {
+  .home-score {
     width: 117px;
     color: rgba(249,79,109,1);
     position: absolute;
@@ -388,7 +376,7 @@
     opacity: 1;
     text-align: center;
   }
-  .v126_19 {
+  .guest-score {
     width: 117px;
     color: rgba(249,79,109,1);
     position: absolute;
@@ -399,4 +387,4 @@
     font-size: 90px;
     opacity: 1;
     text-align: center;
-  } */
+  } 
